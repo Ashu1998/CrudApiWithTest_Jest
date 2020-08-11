@@ -36,7 +36,7 @@ describe('Employee', ()=>{
     describe('Retreive Employee Details',()=>{
         it('Retreiving Details of EMployee',async ()=>{
             sinon.stub(DB, 'executeQuery').callsFake(async (options) => {
-                return [];
+                return []
               });
            const result = await employee.getEmployeesDetail();
            console.log(result)
