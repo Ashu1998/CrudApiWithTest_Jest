@@ -3,5 +3,5 @@ export interface EmployeeInterface {
     name: string;
     company: string;
     designation: string;
-    department: Date;
+    department: string;
   }

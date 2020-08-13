@@ -32,9 +32,11 @@ export default class EmployeeMysql{
 	
 		
 			const result = await db.executeQuery(mysql.format('SELECT * FROM EmployeeDetails WHERE id = ?',[id]));
+			console.log(result)
 			if (!result.length) {
 				throw new HTTP404Error("No data found");
 			  }
+			  console.log(result[0])
 			return result[0];
 		
 	}
